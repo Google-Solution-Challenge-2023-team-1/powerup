@@ -19,14 +19,14 @@ const Navbar = () => {
 
     return ( 
         <div className='text-white sticky top-0 left-0 bg-[#222]'>
-            <nav className={`${inter.variable} hidden font-sans md:flex md:flex-wrap justify-between items-center px-24 py-5 shadow-lg`}>
+            <nav className={`${inter.variable} hidden font-sans md:flex md:flex-wrap justify-between items-center px-14 lg:px-24 py-5 shadow-lg`}>
                 <div>
-                    <h1  className={`${inter.variable} font-sans text-lg font-bold text-white pr-4 flex flex-reverse`}>powerup</h1>
+                    <h1  className="text-xl font-primary text-white pr-4 flex flex-reverse">Energizer</h1>
                 </div>
                 <div>
                     {[
                         ['Home', '/', 1],
-                        ['About-me', '/About', 2],
+                        ['About', '/About', 2],
                         ['Projects', '/mission', 3],
                         ['Contact', '/Contact', 4],
                     ].map(([title, url, id]) => { 
@@ -37,7 +37,7 @@ const Navbar = () => {
                             isActive
                             ? "text-[#FF6F00]"
                             : "text-white",
-                            "px-3 py-2 text-lg font-medium "
+                            "px-5 py-2 text-lg font-medium "
                         )}
                         >{title}</Link>
                     
@@ -50,7 +50,7 @@ const Navbar = () => {
 
             <nav className={`${inter.variable} z-[999] shadow-xl w-full md:hidden font-sans flex flex-wrap justify-between items-center px-10 py-5`}>
                 <div>
-                    <h1  className={`${inter.variable} font-sans text-lg font-bold text-`}>powerup</h1>
+                    <h1  className="text-xl font-primary text-white pr-4 flex flex-reverse">Energizer</h1>
                 </div>
                 {isOpen && <div className="z-[999] w-1/2 h-screen bg-[#222] fixed top-0 right-0 flex justify-center items-start pl-4 flex-col ">
                 <button onClick={handleClick} className='text-white fixed top-3 right-5'>
@@ -60,7 +60,7 @@ const Navbar = () => {
                 </button> 
                     {[
                         ['Home', '/', 1],
-                        ['About-me', '/About', 2],
+                        ['About', '/About', 2],
                         ['Projects', '/Projects', 3],
                         ['Contact', '/Contact', 4],
                     ].map(([title, url, id]) => { 

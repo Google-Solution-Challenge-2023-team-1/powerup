@@ -11,9 +11,13 @@ module.exports = {
   theme: {
    extend: {
       colors:{
-        primary: "#FF6F00",    
+        primary: "#FF6F00", 
+        secondary: "#222"   
         
       }
+    },
+    fontFamily: {
+      primary: ['Pacifico', "cursive"]
     },
   },
   plugins: [],
